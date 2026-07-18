@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://www.crsurfaces.com",
   phone: "941-284-2253",
   phoneHref: "tel:+19412842253",
-  email: "[EMAIL]",
+  email: "sales@crsurfaces.com",
   serviceAreas: ["Sarasota, FL", "Tampa, FL"],
   areaServed: ["Sarasota", "Tampa", "Lakewood Ranch", "Bradenton", "St. Petersburg", "Venice", "Brandon"],
   social: {

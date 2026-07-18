@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site-config";
 
@@ -30,18 +31,15 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className={`flex items-center gap-2 font-display text-xl font-semibold transition-colors ${
-            solid ? "text-brand-900" : "text-white"
-          }`}
-        >
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-            <rect x="1" y="15" width="10" height="12" rx="1" className="fill-accent-500" />
-            <rect x="12.5" y="9" width="10" height="18" rx="1" className={solid ? "fill-brand-800" : "fill-white/70"} />
-            <rect x="1" y="1" width="21.5" height="10" rx="1" className={solid ? "fill-brand-900" : "fill-white"} />
-          </svg>
-          {siteConfig.name}
+        <Link href="/" className="flex items-center">
+          <Image
+            src={solid ? "/images/logo/logo-mark-transparent.png" : "/images/logo/logo-mark-white.png"}
+            alt={siteConfig.name}
+            width={288}
+            height={153}
+            priority
+            className="h-10 w-auto sm:h-11"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import { getAllServicesMeta } from "@/lib/services";
 
@@ -9,8 +10,14 @@ export default function Footer() {
     <footer className="border-t border-brand-900/10 bg-brand-900 text-brand-100">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
         <div>
-          <p className="font-display text-lg font-semibold text-white">{siteConfig.name}</p>
-          <p className="mt-3 text-sm leading-relaxed text-brand-100/80">
+          <Image
+            src="/images/logo/logo-mark-white.png"
+            alt={siteConfig.name}
+            width={288}
+            height={153}
+            className="h-11 w-auto"
+          />
+          <p className="mt-4 text-sm leading-relaxed text-brand-100/80">
             Residential &amp; commercial flooring and countertop installation.
           </p>
         </div>
