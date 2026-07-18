@@ -34,3 +34,4 @@ Push to a Git repo and import it in Vercel — zero config needed, Next.js is au
 
 Add a new `.md` file to `content/services/` with the same frontmatter shape as the existing files (`title`, `slug`, `category`, `order`, `excerpt`, `metaDescription`). It will automatically appear in the services grid, sitemap, and get its own page at `/services/<slug>`.
 # crsurfaces
+# crsurfaces
