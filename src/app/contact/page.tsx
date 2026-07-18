@@ -36,10 +36,6 @@ export default function ContactPage() {
                   {siteConfig.email}
                 </a>
               </li>
-              <li>
-                <span className="block font-semibold text-brand-900">Service Areas</span>
-                {siteConfig.serviceAreas.join(" & ")}
-              </li>
             </ul>
           </div>
 

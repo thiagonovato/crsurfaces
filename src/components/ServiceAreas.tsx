@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export default function ServiceAreas() {
@@ -25,21 +24,6 @@ export default function ServiceAreas() {
               {city}, FL
             </span>
           ))}
-        </div>
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Link
-            href="/service-areas/sarasota"
-            className="rounded-full bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800"
-          >
-            Sarasota Flooring &amp; Countertops
-          </Link>
-          <Link
-            href="/service-areas/tampa"
-            className="rounded-full bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800"
-          >
-            Tampa Flooring &amp; Countertops
-          </Link>
         </div>
       </div>
     </section>

@@ -64,10 +64,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <span className="inline-block rounded-full bg-accent-500/90 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-white">
-            Sarasota &amp; Tampa, FL
-          </span>
-          <h1 className="mt-6 font-display text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="font-display text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
             Flooring &amp; Countertops Built to Last
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">

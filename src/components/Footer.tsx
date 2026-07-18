@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <p className="font-display text-lg font-semibold text-white">{siteConfig.name}</p>
           <p className="mt-3 text-sm leading-relaxed text-brand-100/80">
-            Flooring and countertop installation for homeowners across Sarasota and Tampa, FL.
+            Residential &amp; commercial flooring and countertop installation.
           </p>
         </div>
 
@@ -54,7 +54,6 @@ export default function Footer() {
                 {siteConfig.email}
               </a>
             </li>
-            <li className="text-brand-100/80">Serving {siteConfig.serviceAreas.join(" & ")}</li>
           </ul>
         </div>
       </div>

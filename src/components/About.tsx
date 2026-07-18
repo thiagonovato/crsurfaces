@@ -1,10 +1,19 @@
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 
 export default function About() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <div className="relative h-80 overflow-hidden rounded-2xl bg-[linear-gradient(135deg,#4d443b_0%,#948c7d_50%,#2b2420_100%)] lg:h-[26rem]" />
+        <div className="relative h-80 overflow-hidden rounded-2xl lg:h-[26rem]">
+          <Image
+            src="/images/about/about-kitchen-renovation.jpg"
+            alt={`${siteConfig.name} kitchen renovation in progress`}
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </div>
 
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-accent-600">About {siteConfig.name}</p>

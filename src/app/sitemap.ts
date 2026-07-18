@@ -1,17 +1,10 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { getAllServiceSlugs } from "@/lib/services";
+import { getAllProjectSlugs } from "@/lib/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
-    "",
-    "/services",
-    "/about",
-    "/contact",
-    "/service-areas",
-    "/service-areas/sarasota",
-    "/service-areas/tampa",
-  ].map((route) => ({
+  const staticRoutes = ["", "/services", "/projects", "/about", "/contact"].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date(),
   }));
@@ -21,5 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  return [...staticRoutes, ...serviceRoutes];
+  const projectRoutes = getAllProjectSlugs().map((slug) => ({
+    url: `${siteConfig.url}/projects/${slug}`,
+    lastModified: new Date(),
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...projectRoutes];
 }
